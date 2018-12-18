@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Common reducer should add Entities 1`] = `
+Object {
+  "error": false,
+  "loading": false,
+  "players": Object {
+    "p1Id": Object {
+      "id": "p1Id",
+      "name": "Player1",
+    },
+    "p2Id": Object {
+      "id": "p2Id",
+      "name": "Player2",
+    },
+  },
+}
+`;
+
+exports[`Common reducer should add Entities to existing state 1`] = `
+Object {
+  "error": false,
+  "loading": false,
+  "players": Object {
+    "p1Id": Object {
+      "id": "p1Id",
+      "name": "Player1",
+    },
+    "p2Id": Object {
+      "id": "p2Id",
+      "name": "Player2",
+    },
+    "p3Id": Object {
+      "id": "p3Id",
+      "name": "Player3",
+    },
+    "p4Id": Object {
+      "id": "p4Id",
+      "name": "Player4",
+    },
+  },
+}
+`;
+
+exports[`Common reducer should give initial state 1`] = `
+Object {
+  "error": false,
+  "loading": false,
+  "players": Object {},
+}
+`;

@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Reducer for Match In progress should add Players 1`] = `
+Object {
+  "configurationId": "1",
+  "error": false,
+  "loading": false,
+  "matchId": undefined,
+  "player1": 1,
+  "player2": undefined,
+  "rounds": Array [],
+  "winner": undefined,
+}
+`;
+
+exports[`Reducer for Match In progress should add Players 2`] = `
+Object {
+  "configurationId": "1",
+  "error": false,
+  "loading": false,
+  "matchId": undefined,
+  "player1": undefined,
+  "player2": 2,
+  "rounds": Array [],
+  "winner": undefined,
+}
+`;
+
+exports[`Reducer for Match In progress should give inital state 1`] = `
+Object {
+  "configurationId": "1",
+  "error": false,
+  "loading": false,
+  "matchId": undefined,
+  "player1": undefined,
+  "player2": undefined,
+  "rounds": Array [],
+  "winner": undefined,
+}
+`;

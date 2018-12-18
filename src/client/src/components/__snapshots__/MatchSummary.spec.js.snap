@@ -1,0 +1,135 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loading component should display rounds data 1`] = `
+<div
+  className="MuiPaper-root-1 MuiPaper-elevation5-8 MuiPaper-rounded-2"
+>
+  <h3
+    className="MuiTypography-root-28 MuiTypography-h5-44"
+  >
+    Score
+  </h3>
+  <div
+    className="MuiTypography-root-28 MuiTypography-body1-37"
+  >
+    <table>
+      <tbody>
+        <tr>
+          <th>
+            Round
+          </th>
+          <th>
+            Winner
+          </th>
+        </tr>
+        <tr>
+          <td>
+            0
+          </td>
+          <td>
+            Player 1
+          </td>
+        </tr>
+        <tr>
+          <td>
+            1
+          </td>
+          <td>
+            Player 2
+          </td>
+        </tr>
+        <tr>
+          <td>
+            2
+          </td>
+          <td>
+            ---
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Loading component should show winner view 1`] = `
+<div
+  className="MuiPaper-root-1 MuiPaper-elevation5-8 MuiPaper-rounded-2"
+>
+  <h3
+    className="MuiTypography-root-28 MuiTypography-h5-44"
+  >
+    Player 1 is the MASTER!!!
+  </h3>
+  <h3
+    className="MuiTypography-root-28 MuiTypography-h5-44"
+  >
+    Score
+  </h3>
+  <div
+    className="MuiTypography-root-28 MuiTypography-body1-37"
+  >
+    <table>
+      <tbody>
+        <tr>
+          <th>
+            Round
+          </th>
+          <th>
+            Winner
+          </th>
+        </tr>
+        <tr>
+          <td>
+            0
+          </td>
+          <td>
+            Player 1
+          </td>
+        </tr>
+        <tr>
+          <td>
+            1
+          </td>
+          <td>
+            Player 2
+          </td>
+        </tr>
+        <tr>
+          <td>
+            2
+          </td>
+          <td>
+            ---
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <button
+    className="MuiButtonBase-root-89 MuiButton-root-63 MuiButton-contained-74 MuiButton-containedPrimary-75 MuiButton-raised-77 MuiButton-raisedPrimary-78"
+    disabled={false}
+    onBlur={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex="0"
+    type="button"
+  >
+    <span
+      className="MuiButton-label-64"
+    >
+      New Game
+    </span>
+    <span
+      className="MuiTouchRipple-root-92"
+    />
+  </button>
+</div>
+`;

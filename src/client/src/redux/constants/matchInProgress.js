@@ -1,0 +1,7 @@
+export const START_MATCH = 'Start new match'
+export const SERVER_START_MATCH = 'Start new match in server'
+export const SERVER_LOADING = 'Loading data from server'
+export const ERROR_SERVER_LOADING = 'Error loading data from server'
+export const ADD_PLAYER_1 = 'Add player 1'
+export const ADD_PLAYER_2 = 'Add player 2'
+export const RESET_GAME = 'Reset the match'
