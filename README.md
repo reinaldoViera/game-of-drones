@@ -2,7 +2,7 @@
 
 ## How to:
 
-The project is devided in two parts: client and server.
+The project is divided in two parts: client and server.
 
 ### Client
 
@@ -12,7 +12,7 @@ To deploy the app:
 1. Move to the client folder `cd src/client`.
 2. Run `yarn` to intall the dependencies.
 3. Run `yarn start` to deploy a development server in [http://localhost:3000](http://localhost:3000).
-4. Optionally you can run `yarn run build` to build the app for production to the `src/client/build` folder. This folder will be server by the 'server' in [http://localhost:4000](http://localhost:4000).
+4. Optionally you can run `yarn run build` to build the app for production to the `src/client/build` folder. This folder will be server by the 'server' through [http://localhost:4000](http://localhost:4000).
 
 More commands:
 * `yarn test` to run all unit test.
@@ -26,6 +26,6 @@ The `config.json` file is used to configure the connection. Please, create the d
 
 To deploy the server:
 1. Run `yarn` to intall the dependencies.
-2. Run `yarn start` to init the server. If the connection is configured correctlly, this command should create the tables the configured database, and fill some default data.
+2. Run `yarn start` to init the server. If the connection is configured correctlly, this command should create the tables in the configured database, and fill some default data.
 
 
