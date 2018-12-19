@@ -12,7 +12,7 @@ import {
 
 export const createNewRound = (dispatch) => (p1Move, player1, p2Move, player2, matchId, prev_rounds, cb) => () => {
   const mutation = gql`
-    mutation {  
+    mutation newRound{  
         newRound(
             player1_move: ${p1Move},
             player1_key: ${player1.id},

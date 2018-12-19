@@ -3,7 +3,8 @@ import { getEntity, addEntity } from "./common";
 import { SERVER_LOADING, ERROR_SERVER_LOADING, ADD_MOVES } from "../constants/move";
 
 const movesQuery = gql`
-  query {
+
+  query movetypes{
     movetypes{
         id
         name

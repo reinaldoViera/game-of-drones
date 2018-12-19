@@ -4,7 +4,7 @@ import { addEntity, getEntity } from "./common";
 import { ADD_CONFIGS, SERVER_LOADING, ERROR_SERVER_LOADING } from "../constants/configuration";
 
 const configurationsQuery = gql`
-  query {
+query configs {
       configs {
           id
           name

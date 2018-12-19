@@ -10,11 +10,11 @@ import {
 } from "./common";
 
 const playersQuery = gql`
-  query {
+query players {
     players {
         id
         name
-    }
+  }
 }
 `;
 
