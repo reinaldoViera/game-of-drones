@@ -2,10 +2,10 @@ import React from 'react'
 import { Grid } from '@material-ui/core';
 import Move from './Move';
 
-export default function MoveList({ moves = [], onMoveSelection }) {
+export default function MoveList({ moves = [], onMoveSelection, id }) {
     const onClick = (move) => () => onMoveSelection(move);
     return (
-        <Grid container spacing={8}>
+        <Grid id={id} container spacing={8}>
             {
                 moves.map((move, i) =>
                     <Grid key={i} item xs={12} sm={6} lg={4} xl={4} md={4}>

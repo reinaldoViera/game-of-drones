@@ -66,7 +66,7 @@ export class RoundPage extends Component {
         }
         {
           p1_move && p2_move &&
-          <Button variant="contained" color="primary" onClick={this.play} className={classes.button}>
+          <Button id="go-btn" variant="contained" color="primary" onClick={this.play} className={classes.button}>
             GO!
           </Button>
         }

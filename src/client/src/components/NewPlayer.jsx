@@ -36,6 +36,7 @@ export default class NewPlayer extends Component {
             <Dialog
                 open={open}
                 onClose={this.handleCancel}
+                id="new-player-dialog"
                 aria-labelledby="form-dialog-title">
                 <DialogTitle id="form-dialog-title">Add new Player</DialogTitle>
                 <DialogContent>
@@ -44,7 +45,7 @@ export default class NewPlayer extends Component {
                         value={name}
                         onChange={this.handleChange}
                         margin="dense"
-                        id="name"
+                        id="new-player-name"
                         label="Name"
                         type="text"
                         fullWidth
@@ -54,7 +55,7 @@ export default class NewPlayer extends Component {
                     <Button onClick={this.handleCancel} color="secondary">
                         Cancel
             </Button>
-                    <Button onClick={this.handleClose} color="primary" disabled={!valid}>
+                    <Button id="new-player-btn" onClick={this.handleClose} color="primary" disabled={!valid}>
                         Add
             </Button>
                 </DialogActions>

@@ -12,7 +12,9 @@ exports[`Loading component should display rounds data 1`] = `
   <div
     className="MuiTypography-root-28 MuiTypography-body1-37"
   >
-    <table>
+    <table
+      id="summary-table"
+    >
       <tbody>
         <tr>
           <th>
@@ -69,7 +71,9 @@ exports[`Loading component should show winner view 1`] = `
   <div
     className="MuiTypography-root-28 MuiTypography-body1-37"
   >
-    <table>
+    <table
+      id="summary-table"
+    >
       <tbody>
         <tr>
           <th>
@@ -109,6 +113,7 @@ exports[`Loading component should show winner view 1`] = `
   <button
     className="MuiButtonBase-root-89 MuiButton-root-63 MuiButton-contained-74 MuiButton-containedPrimary-75 MuiButton-raised-77 MuiButton-raisedPrimary-78"
     disabled={false}
+    id="new-game-btn"
     onBlur={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}

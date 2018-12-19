@@ -17,7 +17,7 @@ const styles = () =>({
 function SelectedPlayers({ player1, player2, classes }) {
 
     return (
-        <Grid container spacing={8} className={classes.grid}>
+        <Grid id="selected-players" container spacing={8} className={classes.grid}>
             {
                 player1 && 
                 <Zoom in>

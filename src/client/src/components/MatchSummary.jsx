@@ -28,7 +28,7 @@ export function MatchSummary({ rounds = [], winner = false, classes, onNewGame }
                 Score
             </Typography>
             <Typography component="div">
-                <table className={classes.table}>
+                <table id="summary-table" className={classes.table}>
                     <tbody>
                         <tr>
                             <th>Round</th>
@@ -51,7 +51,7 @@ export function MatchSummary({ rounds = [], winner = false, classes, onNewGame }
             </Typography>
             {
                 winner && 
-                <Button variant="contained" color="primary" className={classes.button} onClick={onNewGame}>
+                <Button id="new-game-btn" variant="contained" color="primary" className={classes.button} onClick={onNewGame}>
                     New Game
                 </Button>
             }

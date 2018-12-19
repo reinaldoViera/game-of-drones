@@ -90,7 +90,7 @@ export class StartGame extends Component {
         </Loading>
         {
           (!this.props.player1 || !this.props.player2) &&
-          <Paper elevation={5} className={this.props.classes.instruction}>
+          <Paper id="select-instructions" elevation={5} className={this.props.classes.instruction}>
             <Typography variant="h5" component="h3">
               Select your players
             </Typography>
@@ -99,7 +99,7 @@ export class StartGame extends Component {
         <SelectedPlayers player1={this.props.player1} player2={this.props.player2} />
         {
           this.props.player1 && this.props.player2 &&
-          <Button variant="contained" color="primary" onClick={this.startGame} className={this.props.classes.button}>
+          <Button id="start-game-btn" variant="contained" color="primary" onClick={this.startGame} className={this.props.classes.button}>
             Start Game
           </Button>
         }

@@ -38,7 +38,7 @@ class PlayerList extends React.Component {
     render() {
         const { players = [], classes } = this.props;
         return (
-            <div>
+            <div id="player-list">
                 <NewPlayer open={this.state.showCreate} checkName={this.checkName} handleClose={this.handleClose}/>
                 {
                     players.map(player => (
@@ -54,7 +54,7 @@ class PlayerList extends React.Component {
                     ))
                 }
                 <Tooltip title="Add New Player">
-                    <Fab size="small"  color="primary" aria-label="Add" className={classes.fab} onClick={this.openCreate}>
+                    <Fab size="small" id="add-new-player"  color="primary" aria-label="Add" className={classes.fab} onClick={this.openCreate}>
                         <Add />
                     </Fab>
                 </Tooltip>

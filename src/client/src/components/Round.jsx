@@ -30,7 +30,7 @@ function Round({ classes, move1, move2, moves, onSelectMove1, onSelectMove2, p1_
                 {
                     move1 ?
                         <Move hidden {...move1}>OK</Move> :
-                        <MoveList moves={moves} onMoveSelection={onSelectMove1} />
+                        <MoveList id="p1-moves" moves={moves} onMoveSelection={onSelectMove1} />
                 }
             </Grid>
             <Grid item xs={6} sm={6} lg={6} xl={6} md={6} className={classes.grid2}>
@@ -42,7 +42,7 @@ function Round({ classes, move1, move2, moves, onSelectMove1, onSelectMove2, p1_
                 {
                     move2 ?
                         <Move hidden {...move2}>OK</Move> :
-                        <MoveList moves={moves} onMoveSelection={onSelectMove2} />
+                        <MoveList id="p2-moves" moves={moves} onMoveSelection={onSelectMove2} />
                 }
             </Grid>
         </Grid>
