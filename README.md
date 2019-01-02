@@ -10,7 +10,7 @@ Included in `src/client`, is a react application built with `create-react-app`.
 
 To deploy the app:
 1. Move to the client folder `cd src/client`.
-2. Run `yarn` to intall the dependencies.
+2. Run `yarn` to install the dependencies.
 3. Run `yarn start` to deploy a development server in [http://localhost:3000](http://localhost:3000).
 4. Optionally you can run `yarn run build` to build the app for production to the `src/client/build` folder. This folder will be server by the 'server' through [http://localhost:4000](http://localhost:4000).
 
