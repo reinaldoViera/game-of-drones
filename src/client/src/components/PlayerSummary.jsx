@@ -4,9 +4,9 @@ import { Paper, Typography, withStyles, CircularProgress } from '@material-ui/co
 import { Query } from "react-apollo";
 import gql from 'graphql-tag';
 
-export const playerSummary = (id) => gql`
-query playerSummary{
-  playerSummary(id: ${id}) {
+export const playerSummary = gql`
+query playerSummary($id: ID!){
+  playerSummary(id: $id) {
     matchs
     wins
   }
@@ -29,7 +29,7 @@ export class PlayerSummary extends Component {
   
   render() {
     return (
-      <Query query={playerSummary(this.props.id)}  pollInterval={3000}>
+      <Query query={playerSummary} variables={{ id: this.props.id}}  pollInterval={3000}>
         {
           ({ loading, error, data }) => (
             <Paper className={this.props.classes.root} elevation={5}>

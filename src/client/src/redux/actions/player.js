@@ -21,15 +21,18 @@ query players {
 
 export const createFetchNewPlayer = (dispatch) => (name) => () => {
     const mutation = gql`
-        mutation {
-            addPlayer(name: "${name}") {
+        mutation addPlayer($name: String!) {
+            addPlayer(name: $name) {
                 id,
                 name
             }
         }
     `;
     client.mutate({
-        mutation
+        mutation,
+        variables: {
+            name
+        }
     }).then(({ data }) => {
         dispatch(addPlayers([ data.addPlayer ]))
     })

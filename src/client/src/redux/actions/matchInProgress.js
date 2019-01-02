@@ -26,14 +26,21 @@ export const fetchError = (error = true) => ({
 // Thunk
 export const createStartMatch = (dispatch) => (p1Id, p2Id, configId, cb) => () => {
   const mutation = gql`
-  mutation startMatch {
-      startMatch(player1: ${p1Id}, player2: ${p2Id}, config: ${configId}) {
+  mutation startMatch($player1: ID!, $player2: ID!, $config: ID!) {
+      startMatch(player1: $player1, player2: $player2, config: $config) {
         id
       }
   }
   `;
   dispatch(fetchStart());
-  client.mutate({ mutation }).then(({ data })=> {
+  client.mutate({ 
+    mutation,
+    variables: {
+      player1: p1Id,
+      player2: p2Id,
+      config: configId
+    }
+  }).then(({ data })=> {
     const match = data.startMatch;
     dispatch(setStartMatch(match.id, p1Id, p2Id, configId, false))
     typeof cb === 'function' && cb(match);

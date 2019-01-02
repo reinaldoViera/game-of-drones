@@ -12,13 +12,13 @@ import {
 
 export const createNewRound = (dispatch) => (p1Move, player1, p2Move, player2, matchId, prev_rounds, cb) => () => {
   const mutation = gql`
-    mutation newRound{  
+    mutation newRound($player1_move: ID!, $player1_key: ID!, $player2_move: ID!, $player2_key: ID!, $matchId: ID!){  
         newRound(
-            player1_move: ${p1Move},
-            player1_key: ${player1.id},
-            player2_move: ${p2Move},
-            player2_key: ${player2.id},
-            matchId: ${matchId}
+            player1_move: $player1_move,
+            player1_key: $player1_key,
+            player2_move: $player2_move,
+            player2_key: $player2_key,
+            matchId: $matchId
         ) {
             moves {
                 move_type {
@@ -35,7 +35,16 @@ export const createNewRound = (dispatch) => (p1Move, player1, p2Move, player2, m
     }
   `;
   dispatch(calculatingRound(true));
-  client.mutate({ mutation }).then(({ data })=> {
+  client.mutate({ 
+      mutation,
+    variables: {
+        player1_move: p1Move,
+        player1_key: player1.id,
+        player2_move: p2Move,
+        player2_key: player2.id,
+        matchId: matchId
+    }
+ }).then(({ data })=> {
     dispatch(calculatingRound(false));
     const { winner = {}, moves = []} = data.newRound;
     const p1Vitories = prev_rounds.filter(round => round.winner === player1.id).length;
