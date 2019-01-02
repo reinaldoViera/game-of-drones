@@ -9,7 +9,10 @@ import wait from 'waait';
 
 const mocks = [{
     request: {
-        query: playerSummary(1)
+        query: playerSummary,
+        variables: {
+            id: 1
+        }
     },
     result: {
         data: {
@@ -25,11 +28,11 @@ describe('PlayerSummary component', () => {
     test('should render result data', async () => {
         const result = renderer.create( 
             <MockedProvider mocks={mocks} addTypename={false}>
-                <PlayerSummary name="Player 1" id='1' classes={{}}/>
+                <PlayerSummary name="Player 1" id={1} classes={{}}/>
             </MockedProvider>,
-        ).toJSON();
+        );
         await wait(1); // wait for response
-        expect(result).toMatchSnapshot();
+        expect(result.toJSON()).toMatchSnapshot();
     })
 
 })

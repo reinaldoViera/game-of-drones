@@ -9,30 +9,12 @@ exports[`PlayerSummary component should render result data 1`] = `
   >
     Player 1
   </h3>
-  <div
-    className="MuiCircularProgress-root-63 MuiCircularProgress-colorPrimary-66 MuiCircularProgress-indeterminate-65"
-    role="progressbar"
-    style={
-      Object {
-        "height": 40,
-        "width": 40,
-      }
-    }
+  <h4
+    className="MuiTypography-root-28 MuiTypography-h5-44"
   >
-    <svg
-      className="MuiCircularProgress-svg-68"
-      viewBox="22 22 44 44"
-    >
-      <circle
-        className="MuiCircularProgress-circle-69 MuiCircularProgress-circleIndeterminate-71"
-        cx={44}
-        cy={44}
-        fill="none"
-        r={20.2}
-        strokeWidth={3.6}
-        style={Object {}}
-      />
-    </svg>
-  </div>
+    Matchs: 5
+    <br />
+    Wins: 3
+  </h4>
 </div>
 `;
